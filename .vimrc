@@ -11,6 +11,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'Valloric/YouCompleteMe'
     Plug 'ekalinin/dockerfile.vim'
     Plug 'docker/docker'
+    Plug 'ervandew/supertab'
 call plug#end()
 
 syntax on 
@@ -86,9 +87,9 @@ let g:go_highlight_variable_declarations = 1
 
 
 " make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-n>'
+let g:ycm_key_list_select_completion = ['<c-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<c-]>'
 
 " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger = "<tab>"
