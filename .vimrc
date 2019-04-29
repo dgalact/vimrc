@@ -17,6 +17,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'honza/vim-snippets'
     Plug 'davidhalter/jedi-vim'
     Plug 'Valloric/YouCompleteMe'
+    Plug 'ekalinin/dockerfile.vim'
+    Plug 'docker/docker'
 call plug#end()
 
 syntax on 
